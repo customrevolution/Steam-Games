@@ -1,0 +1,31 @@
+.games {
+	padding: 50px;
+	text-align: center;
+	&__pageHeading {
+		text-align: center;
+		color: white;
+		font-size: 60px;
+	}
+
+	&__game {
+		color: white;
+	}
+
+	&__reload {
+		width: 160px;
+		height: 40px;
+		border-radius: 1rem;
+		border: none;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background-color: red;
+		transition: 0.2s;
+		margin-bottom: 50px;
+		cursor: pointer;
+	}
+
+	&__reload:hover {
+		background-color: violet;
+	}
+}

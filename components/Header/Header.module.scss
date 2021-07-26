@@ -1,0 +1,46 @@
+$primary-color: rgb(23, 26, 33);
+
+@mixin flexRow() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.navbar {
+	@include flexRow();
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding-left: 200px;
+	padding-right: 200px;
+	background-color: $primary-color;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		& img {
+			width: 60%;
+		}
+	}
+
+	&__links {
+		@include flexRow();
+		&__link {
+			margin-left: 60px;
+			font-size: 17px;
+			font-weight: 300;
+			color: rgb(221, 221, 221);
+			transition: 0.2s;
+			cursor: pointer;
+			text-transform: uppercase;
+
+			&:hover {
+				// color: rgb(174, 174, 235);
+				color: white;
+				text-shadow: 0px 0px 1.5px white;
+			}
+		}
+	}
+}
